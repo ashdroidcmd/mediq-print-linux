@@ -1,0 +1,31 @@
+{
+  "name": "thermal-printer-test-linux",
+  "version": "1.0.0",
+  "description": "Minimal Ubuntu Linux thermal printer test for EPSON TM-T82II",
+  "main": "test-print.js",
+  "scripts": {
+    "test": "node test-print.js",
+    "test:usb": "node test-print.js --usb",
+    "test:tcp": "node test-print.js --tcp 192.168.1.100",
+    "help": "node test-print.js --help",
+    "server": "node print-server.js",
+    "server:dev": "node print-server.js --debug"
+  },
+  "keywords": [
+    "epson",
+    "thermal-printer",
+    "tm-t82ii",
+    "ubuntu",
+    "linux"
+  ],
+  "author": "Medique HIS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
